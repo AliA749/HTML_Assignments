@@ -27,7 +27,7 @@ html
 	width:30px;
 }
 
-#result
+#result,#Avg,#GPA,#Letter_grade
 {
 	background-color: lightgoldenrodyellow;
 	border: solid;
