@@ -7,6 +7,7 @@ window.addEventListener("load",initelements5);
 window.addEventListener("load",initelements6);
 window.addEventListener("load",initelements7);
 window.addEventListener("load",initelements8);
+window.addEventListener("load",initelements9);
 
 
 function initelements1()
@@ -78,6 +79,13 @@ function initelements7()
 function initelements8()
 {
 	document.getElementById("CourseName").focus();
+	document.getElementById("CourseGRADE").disabled=true;
+	document.getElementById("submit").disabled=true;
+}
+
+function initelements9()
+{
+	document.getElementById("CourseGRADE").focus();
 	document.getElementById("submit").disabled=true;
 }
 
@@ -92,7 +100,9 @@ function addlistners()
 	document.getElementById("GradeLevel").addEventListener("keypress",elementable6);
 	document.getElementById("EmailTXT").addEventListener("keypress",elementable7);
 	document.getElementById("CourseName").addEventListener("keypress",elementable8);
+	document.getElementById("CourseGRADE").addEventListener("keypress",elementable9);
 	document.getElementById("submit").addEventListener("click",UserInfo);
+	document.getElementById("Avg").addEventListener("click",UserAVG);
 
 }
 function elementable()
@@ -146,6 +156,12 @@ function elementable8()
 {
 	Course= document.getElementById("CourseName").value;
 	if (Course !="")
+		document.getElementById("CourseGRADE").disabled=false;
+}
+function elementable9()
+{
+	Course= document.getElementById("CourseGRADE").value;
+	if (Course !="")
 		document.getElementById("submit").disabled=false;
 }
 
@@ -169,5 +185,12 @@ function UserInfo()
 	Email=document.getElementById("EmailTXT").value;
 	Course=document.getElementById("CourseName").value;
 	
-	document.getElementById("Result").innerHTML= firstname + " " +middlename + ". " +lastname+ ", " + SLC+" "+OSIS+",  " + Grade + "grade ,"+ "Email:  " + Email+",  " + Course+ ",  " +".</span>";
+	document.getElementById("Result").innerHTML= firstname + " " +middlename + ". " +lastname+ ", " + SLC+" "+OSIS+",  " + Grade + " grade ,"+ "Email:  " + Email+",  " + Course+ ",  " +".</span>";
+}
+
+function UserAVG()
+{
+	var AVG;
+	
+
 }
