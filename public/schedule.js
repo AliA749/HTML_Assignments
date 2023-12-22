@@ -340,7 +340,22 @@ function schedule()
 	var Teacher8= document.getElementById("teacher8txt").value;
 	
 	
-	alert(" ||1st Period: " +" " + class1 + ", " + Teacher1 + "  Start 8:00" + " & End 8:45||"+ " 2nd Period: " +" " + class2 + ", " + Teacher2 + " & Start 8:47" + " & End 9:30||" +" 3rd Period: "+" "+ class3+ ", "+ Teacher3 +" , Start 8:47 &" + " End 9:30|| " +" 4th Period: "+" "+ class4+ ", "+ Teacher4 +" , Start 10:22 &" + " End 11:08|| "+" 5th Period: "+" "+ class5+ ", "+ Teacher5 +" , Start 11:11 &" + " End 11:56|| "+" 6th Period: "+" "+ class6+ ", "+ Teacher6 +" , Start 11:58 &" + " End 12:25|| "+" 7th Period: "+" "+ class7+ ", "+ Teacher7 +" , Start 12:28 &" + " End 1:32|| "+" 8th Period: "+" "+ class8+ ", "+ Teacher8 +" , Start 1:35 &" + " End 2:20|| ");
+	document.getElementById("class1lbl").innerHTML += class1;
+	document.getElementById("Teacher1lbl").innerHTML += Teacher1;
+	document.getElementById("class2lbl").innerHTML += class2;
+	document.getElementById("Teacher2lbl").innerHTML += Teacher2;
+	document.getElementById("class3lbl").innerHTML += class3;
+	document.getElementById("Teacher3lbl").innerHTML += Teacher3;
+	document.getElementById("class4lbl").innerHTML += class4;
+	document.getElementById("Teacher4lbl").innerHTML += Teacher4;
+	document.getElementById("class5lbl").innerHTML += class5;
+	document.getElementById("Teacher5lbl").innerHTML += Teacher5;
+	document.getElementById("class6lbl").innerHTML += class6;
+	document.getElementById("Teacher6lbl").innerHTML += Teacher6;
+	document.getElementById("class7lbl").innerHTML += class7;
+	document.getElementById("Teacher7lbl").innerHTML += Teacher7;
+	document.getElementById("class8lbl").innerHTML += class8;
+	document.getElementById("Teacher8lbl").innerHTML += Teacher8;
 }
 function continuepage()
 {
