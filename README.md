@@ -1,0 +1,1 @@
+This multipage project is to test myself and to further improve my web development knowledge I will imporve and tweak whats needed. The main page links to all the pages (jeopardy,Lives game,Research page(stem based),Medical page, and a calculator.
