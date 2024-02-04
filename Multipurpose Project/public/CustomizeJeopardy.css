@@ -1,0 +1,46 @@
+#tbscience{
+	margin-left:210px;
+}
+#tbtech
+{
+	margin-top:-490px;
+ 	margin-left:370px;
+ 	
+}
+#tbEngineering
+{
+	margin-top:-490px;
+ 	margin-left:530px;
+}
+
+#tbmath
+{
+	margin-top:-490px;
+ 	margin-left:690px;
+}
+
+#tbscience,#tbtech,#tbEngineering,#tbmath
+{
+	text-align:right;
+}
+html{
+background-color: blue;
+}
+
+
+#Points2cmb
+{
+	margin-left:50px;
+	margin-top:-18px;
+}
+#plus2
+{
+	margin-left:50px;
+	margin-top:-40px;
+}
+#minus2
+{
+	margin-left:50px;
+	margin-top:-1px;
+}
+
