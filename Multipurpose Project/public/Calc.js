@@ -192,9 +192,9 @@ function Percent()
 
 function Exponent() {
 	if (IP1 !== "") {
-		IP1 = parseFloat(IP1) * parseFloat(IP1);
+		IP1 = Math.pow(IP1,2);
 	} else if (IP2 !== "") {
-		IP2 = parseFloat(IP2) * parseFloat(IP2);
+		IP2 = Math.pow(IP2,2);
 	}
 	else{
 		alert("Error");
@@ -208,11 +208,11 @@ function Exponent() {
 function Squareroot() {
 	if(IP1 !="")
 	{
-		IP1=(parseInt(IP1)**0.5);
+		IP1=Math.sqrt(IP1);
 	}
 	else if(IP2 !="")
 	{
-		IP2 =(parseInt(IP2) ** 0.5);
+		IP2 =Math.sqrt(IP2);
 	}
 	else {
 		alert("Error");
