@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Card Game</title>
+<script src="cardmatchjs.js"></script>
+<link rel="stylesheet" type="text/css" href="Cardmatch.css">
+</head>
+<body>
+	<div id="lives">
+		<img id="Card1" src="Cardsimg.jpeg" alt="Live 1" style="width:5%">
+		<img id="Card2" src="Cardsimg.jpeg" alt="Live 2" style="width:5%">
+		<img id="Card3" src="Cardsimg.jpeg" alt="Live 3" style="width:5%">
+	</div>
+	<div id="difficulty">
+		<b><label>Difficulty: </label></b>	
+		<select id="cmbdifficulty">
+			<option></option>
+			<option id="Easyop">Easy</option>
+			<option id="Mediumop">Medium</option>
+			<option id="Hardop">Hard</option>
+		</select>
+	</div>
+	<div id="Easy">
+		<label id="Displaylbl">Get 3 wrong you lose all your lives</label>
+		<label id=" Question1EZ">What is the full name for HTML?</label>
+		<input id="Answer1EZ" type="text"/>
+		<label id=" Question2EZ">What is the Answer  of 5*5*3?</label>
+		<input id="Answer2EZ" type="text"/>
+		<label id=" Question3EZ">Who made Tesla?</label>
+		<input id="Answer3EZ" type="text"/>
+	</div>
+	<div id="Medium">
+		<label id="Displaylbl2">Get 2 wrong you lose all your lives</label>
+		<label id=" Question1M">What does .style.display="block" do?</label>
+		<input id="Answer1M" type="text"/>
+		<label id=" Question2M">What is the Square root of 10*20/8?</label>
+		<input id="Answer2M" type="text"/>
+		<label id=" Question3M">Who made or co founded Pixar?</label>
+		<input id="Answer3M" type="text"/>
+	</div>
+	<div id="Hard">
+		<label id="Displaylbl3">Get 1 wrong you lose all your lives</label>
+		<label id=" Question1H">What does window.addEventListener("load", AddListeners); do?</label>
+		<input id="Answer1H" type="text"/>
+		<label id=" Question2H">What is the Square root of 100*25/4?</label>
+		<input id="Answer2H" type="text" style="width:30px"/>
+		<label id=" Question3H">Who made the 1st computer based on google?</label>
+		<input id="Answer3H" type="text"/>
+	</div>
+	<button type="button" id="SubmitbtnEZ">SUBMIT</button>
+	<button type="button" id="SubmitbtnM">SUBMIT</button>
+	<button type="button" id="SubmitbtnH">SUBMIT</button>
+	<button type="button" id="NextPage">NEXT PAGE</button>
+	<button type="button" id="GoBack">Multipurpose options</button>
+
+</body>
+</html>
