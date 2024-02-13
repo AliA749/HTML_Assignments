@@ -17,7 +17,6 @@ document.getElementById("cmbdifficulty").addEventListener("change",choices);
 document.getElementById("SubmitbtnEZ").addEventListener("click",answersEZ);
 document.getElementById("SubmitbtnM").addEventListener("click",answerM);
 document.getElementById("SubmitbtnH").addEventListener("click",answerH);
-document.getElementById("NextPage").addEventListener("click",Nexpage);
 document.getElementById("GoBack").addEventListener("click", GoBack);
 }
 
@@ -232,10 +231,6 @@ function answerH()
 	else{
 		alert("You Still have Lives nice!");
 	}
-}
-function Nexpage()
-{
-	document.getElementById("NextPage").onclick=window.location.assign("file:///C:/Users/alial/eclipse-workspace/Multipurpose%20Project/public/ResearchEngine.html");
 }
 
 function GoBack()
