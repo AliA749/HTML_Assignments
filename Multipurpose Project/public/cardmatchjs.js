@@ -13,11 +13,11 @@ function Start()
 	document.getElementById("SubmitbtnH").style.display="none";
 }
 function AddListeners() {
-document.getElementById("cmbdifficulty").addEventListener("change",choices);
-document.getElementById("SubmitbtnEZ").addEventListener("click",answersEZ);
-document.getElementById("SubmitbtnM").addEventListener("click",answerM);
-document.getElementById("SubmitbtnH").addEventListener("click",answerH);
-document.getElementById("GoBack").addEventListener("click", GoBack);
+	document.getElementById("cmbdifficulty").addEventListener("change",choices);
+	document.getElementById("SubmitbtnEZ").addEventListener("click",answersEZ);
+	document.getElementById("SubmitbtnM").addEventListener("click",answerM);
+	document.getElementById("SubmitbtnH").addEventListener("click",answerH);
+	document.getElementById("GoBack").addEventListener("click", GoBack);
 }
 
 function choices()
@@ -36,6 +36,9 @@ function choices()
 		document.getElementById("Medium").style.display="none";
 		document.getElementById("Hard").style.display="none";
 		document.getElementById("SubmitbtnEZ").disabled=false;
+		document.getElementById("SubmitbtnH").style.display="none";
+		document.getElementById("SubmitbtnM").style.display="none";
+		document.getElementById("SubmitbtnEZ").style.display="block";
 	}
 	else if(questions=="Medium")
 	{
@@ -48,6 +51,7 @@ function choices()
 		 document.getElementById("Answer3H").textContent="";
 		document.getElementById("Easy").style.display="none";
 		document.getElementById("Medium").style.display="block";
+		document.getElementById("Hard").style.display="none";
 		document.getElementById("SubmitbtnM").disabled=false;
 		document.getElementById("SubmitbtnEZ").style.display="none";
 		document.getElementById("SubmitbtnH").style.display="none";
@@ -232,6 +236,7 @@ function answerH()
 		alert("You Still have Lives nice!");
 	}
 }
+
 
 function GoBack()
 {
