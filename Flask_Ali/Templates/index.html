@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Test</title>
+		<link rel="stylesheet" type="text/css" href="/static/Customize.css"> 
+	</head>
+	<body>
+		<h1>Taken info</h1>
+		<form method="post">
+			<table id="tbschedule">
+				<table id="tbinfo">
+				<tr>
+					{% for header in headings %}
+					<th>{{header}}</th>
+					{% endfor %}
+				</tr>
+				{% for row in data %}
+				<tr>
+					{%for cell in row %}
+					<td>{{cell}}</td>
+					{% endfor %}
+				</tr>
+				{% endfor %}
+			</table>
+		</form>
+	</body>
+</html>
